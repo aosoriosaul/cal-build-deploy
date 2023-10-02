@@ -41,8 +41,8 @@
                     <artifactId>jmeter-maven-plugin</artifactId>
                     <version>1.8.1</version>
                     <configuration>
-            			<jvm>${env.JAVA_HOME}/bin/java</jvm>
-            		</configuration>
+                    <jvm>${env.JAVA_HOME}/bin/java</jvm>
+                </configuration>
                     <executions>
                         <execution>
                             <id>jmeter-tests</id>
