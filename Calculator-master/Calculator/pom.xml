@@ -21,7 +21,7 @@
         <artifactId>parent-pom</artifactId>
         <groupId>apigee</groupId>
         <version>1.0</version>
-        <relativePath>../shared-pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -40,9 +40,6 @@
                     <groupId>com.lazerycode.jmeter</groupId>
                     <artifactId>jmeter-maven-plugin</artifactId>
                     <version>1.8.1</version>
-                    <configuration>
-                    <jvm>${env.JAVA_HOME}/bin/java</jvm>
-                </configuration>
                     <executions>
                         <execution>
                             <id>jmeter-tests</id>
