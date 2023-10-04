@@ -29,7 +29,39 @@
     <version>1.0</version>
     <name>calculator</name>
     <packaging>pom</packaging>
-
+    <build>
+        <plugins>
+        <plugin>
+            <groupId>com.lazerycode.jmeter</groupId>
+            <artifactId>jmeter-maven-plugin</artifactId>
+            <version>1.8.1</version>
+            <executions>
+                <execution>
+                    <id>jmeter-tests</id>
+                    <phase>install</phase>
+                    <goals>
+                        <goal>jmeter</goal>
+                    </goals>
+                    <configuration>
+                        <skipTests>${skipTests}</skipTests> 
+                        <ignoreResultFailures>true</ignoreResultFailures>
+                        <suppressJMeterOutput>false</suppressJMeterOutput>
+                            <propertiesUser> 
+                                <testData>weather_test.csv</testData>
+                                <threadNum>5</threadNum>
+                                <rampUpPeriodSecs>5</rampUpPeriodSecs>
+                                <loopCount>2</loopCount>
+                            </propertiesUser> 
+                    </configuration>
+                </execution>
+            </executions>
+            <configuration>
+                <testFilesDirectory>tests</testFilesDirectory>
+                <testResultsTimestamp>false</testResultsTimestamp>
+            </configuration>                    
+            </plugin>
+        </plugins>
+    </build>   
     <profiles>
         <profile>
             <id>test</id>
@@ -47,40 +79,7 @@
                 <apigee.options>${options}</apigee.options>
                 <apigee.revision>${revision}</apigee.revision>
                 <apigee.host>https://apigee.com</apigee.host>
-            </properties>
-            <build>
-              <plugins>
-                <plugin>
-                    <groupId>com.lazerycode.jmeter</groupId>
-                    <artifactId>jmeter-maven-plugin</artifactId>
-                    <version>1.8.1</version>
-                    <executions>
-                        <execution>
-                            <id>jmeter-tests</id>
-                            <phase>install</phase>
-                            <goals>
-                                <goal>jmeter</goal>
-                            </goals>
-                            <configuration>
-                                <skipTests>${skipTests}</skipTests> 
-                                <ignoreResultFailures>true</ignoreResultFailures>
-                                <suppressJMeterOutput>false</suppressJMeterOutput>
-                                    <propertiesUser> 
-                                        <testData>weather_test.csv</testData>
-                                        <threadNum>5</threadNum>
-                                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
-                                        <loopCount>2</loopCount>
-                                    </propertiesUser> 
-                            </configuration>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <testFilesDirectory>tests</testFilesDirectory>
-                        <testResultsTimestamp>false</testResultsTimestamp>
-                    </configuration>                    
-                    </plugin>
-                </plugins>
-            </build>            
+            </properties>         
         </profile> 
         <!-- optional tests       
         <profile>
