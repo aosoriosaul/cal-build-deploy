@@ -41,9 +41,9 @@
             <apigee.env>test</apigee.env>
             <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
             <apigee.apiversion>v1</apigee.apiversion>
-            <apigee.org>aosoriosaul-eval</apigee.org>
-            <apigee.username>aosoriosaul@hotmail.com</apigee.username>
-            <apigee.password>G@rf13ld1216</apigee.password>
+            <apigee.org>${org}</apigee.org>
+            <apigee.username>${username}</apigee.username>
+            <apigee.password>${password}</apigee.password>
             <apigee.options>${options}</apigee.options>
             <apigee.revision>${revision}</apigee.revision>
             <!-- used while trying to update revision, use when option=update only -->
