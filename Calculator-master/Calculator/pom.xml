@@ -26,30 +26,25 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>apigee</groupId>
-    <artifactId>calculator</artifactId>
+    <artifactId>calculator-v1</artifactId>
     <version>1.0</version>
-    <name>calculator</name>
+    <name>calculator-v1</name>
     <packaging>pom</packaging>
     <profiles>
-                <profile>
-         <id>desarrollo</id>
-         <properties>
-            <org>baz-desarrollo</org>
-            <!-- default org, replace with default org to avoid passing parameter e.g. -Dorg testmyapi -->
-            <options>validate</options>
-            <!-- default org, replace with default org to avoid passing parameter e.g. -Dorg testmyapi -->
-            <apigee.env>test</apigee.env>
-            <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
-            <apigee.apiversion>v1</apigee.apiversion>
-            <apigee.org>${org}</apigee.org>
-            <apigee.username>${username}</apigee.username>
-            <apigee.password>${password}</apigee.password>
-            <apigee.options>${options}</apigee.options>
-            <apigee.revision>${revision}</apigee.revision>
-            <!-- used while trying to update revision, use when option=update only -->
-            <!--apigee.override.delay>10</apigee.override.delay-->
-            <!--apigee.delay>1000</apigee.delay-->
-         </properties>
-      </profile>
+        <profile>
+            <id>desarrollo</id>
+            <properties>
+                <org>aosoriosaul-eval</org>
+                <options>validate</options>
+                <apigee.env>test</apigee.env>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+                <apigee.options>${options}</apigee.options>
+                <apigee.revision>${revision}</apigee.revision>
+            </properties>
+        </profile>
     </profiles>
 </project>
