@@ -33,7 +33,7 @@
         <Response/>
     </PostFlow>
     <HTTPProxyConnection>
-        <BasePath>/calculator</BasePath>
+        <BasePath>/calculator-v1</BasePath>
         <Properties/>
         <VirtualHost>secure</VirtualHost>
         <VirtualHost>default</VirtualHost>
