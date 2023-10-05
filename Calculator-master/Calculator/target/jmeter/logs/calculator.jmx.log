@@ -1,0 +1,127 @@
+2023/10/04 21:18:57 INFO  - jmeter.util.JMeterUtils: Setting Locale to es_ES 
+2023/10/04 21:18:57 INFO  - jmeter.util.JMeterUtils: Could not find resources for 'es_ES', using 'es' 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: Loading user properties from: C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\target\jmeter\bin\user.properties 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: Loading system properties from: C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\target\jmeter\bin\system.properties 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: Copyright (c) 1998-2013 The Apache Software Foundation 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: Version 2.9 r1437961 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: java.version=11 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: java.vm.name=OpenJDK 64-Bit Server VM 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: os.name=Windows 10 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: os.arch=amd64 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: os.version=10.0 
+2023/10/04 21:18:57 INFO  - jmeter.JMeter: file.encoding=Cp1252 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: Default Locale=español (España) 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: JMeter  Locale=español (España) 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: JMeterHome=C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\target\jmeter 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: user.dir  =C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\target\jmeter\bin 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: PWD       =C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: IP: 169.254.251.134 Name: PAPA_LAPTOP FullName: PAPA_LAPTOP 
+2023/10/04 21:18:58 INFO  - jmeter.services.FileServer: Default base='C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\target\jmeter\bin' 
+2023/10/04 21:18:58 INFO  - jmeter.services.FileServer: Set new base='C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\tests' 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: Loading file: C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\tests\calculator.jmx 
+2023/10/04 21:18:58 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2023/10/04 21:18:58 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.4 
+2023/10/04 21:18:58 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1427507 
+2023/10/04 21:18:58 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2023/10/04 21:18:58 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2023/10/04 21:18:58 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Reuse SSL session context on subsequent iterations: true 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2023/10/04 21:18:58 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2023/10/04 21:18:58 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2023/10/04 21:18:58 INFO  - jmeter.JMeter: Test lanzado (1696472338644) 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting 5 threads for group Thread Group. 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2023/10/04 21:18:58 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 5 ramp-up 5 perThread 1000.0 delayedStart=false 
+2023/10/04 21:18:58 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2023/10/04 21:18:58 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2023/10/04 21:18:58 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2023/10/04 21:18:58 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2023/10/04 21:18:58 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2023/10/04 21:18:58 INFO  - jmeter.services.FileServer: Stored: weather_test.csv Alias: weather_test.csv@shareMode.all 
+2023/10/04 21:18:58 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.IllegalArgumentException: Could not read file header line
+	at org.apache.jmeter.services.FileServer.reserveFile(FileServer.java:282)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:132)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:417)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:409)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:156)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:108)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.FileNotFoundException: C:\Users\aosor\Documents\Personal\GitHub\Proyectos\cal-build-deploy\Calculator-master\Calculator\tests\weather_test.csv (El sistema no puede encontrar el archivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.apache.jmeter.services.FileServer.createBufferedReader(FileServer.java:398)
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:325)
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:309)
+	at org.apache.jmeter.services.FileServer.reserveFile(FileServer.java:280)
+	... 8 more
+
+2023/10/04 21:18:58 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-1 
+2023/10/04 21:18:59 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-2 
+2023/10/04 21:18:59 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.jmeter.save.CSVSaveService.csvSplitString(CSVSaveService.java:1131)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:134)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:417)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:409)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:156)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:108)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023/10/04 21:18:59 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-2 
+2023/10/04 21:19:00 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-3 
+2023/10/04 21:19:00 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.jmeter.save.CSVSaveService.csvSplitString(CSVSaveService.java:1131)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:134)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:417)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:409)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:156)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:108)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023/10/04 21:19:00 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-3 
+2023/10/04 21:19:01 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-4 
+2023/10/04 21:19:01 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.jmeter.save.CSVSaveService.csvSplitString(CSVSaveService.java:1131)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:134)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:417)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:409)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:156)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:108)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023/10/04 21:19:01 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-4 
+2023/10/04 21:19:02 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-5 
+2023/10/04 21:19:02 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.jmeter.save.CSVSaveService.csvSplitString(CSVSaveService.java:1131)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:134)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:417)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:409)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:156)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:108)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023/10/04 21:19:02 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-5 
+2023/10/04 21:19:02 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
