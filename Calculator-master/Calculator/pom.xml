@@ -17,85 +17,57 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!--<parent>
+    <parent>
         <artifactId>parent-pom</artifactId>
         <groupId>apigee</groupId>
         <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>-->
+        <relativePath>../shared-pom.xml</relativePath>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>apigee</groupId>
     <artifactId>calculator</artifactId>
-    <version>1</version>
+    <version>1.0</version>
     <name>calculator</name>
     <packaging>pom</packaging>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <name>Maven Plugin Repository</name>
-            <url>https://repo1.maven.org/maven2</url>
-            <layout>default</layout>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.lazerycode.jmeter</groupId>
-                <artifactId>jmeter-maven-plugin</artifactId>
-                <version>1.8.1</version>
-                <executions>
-                    <execution>
-                        <id>jmeter-tests</id>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>jmeter</goal>
-                        </goals>
-                        <configuration>
-                            <skipTests>${skipTests}</skipTests> 
-                            <ignoreResultFailures>true</ignoreResultFailures>
-                            <suppressJMeterOutput>false</suppressJMeterOutput>
-                                <propertiesUser> 
-                                    <testData>weather_test.csv</testData>
-                                    <threadNum>5</threadNum>
-                                    <rampUpPeriodSecs>5</rampUpPeriodSecs>
-                                    <loopCount>2</loopCount>
-                                </propertiesUser> 
-                        </configuration>
-                    </execution>
-                </executions>
-                <configuration>
-                    <testFilesDirectory>tests</testFilesDirectory>
-                    <testResultsTimestamp>false</testResultsTimestamp>
-                </configuration>                    
-            </plugin>
-        </plugins>
-    </build>   
+<!-- optional tests
     <profiles>
         <profile>
             <id>test</id>
-            <properties>
-                <maven.compiler.source>1.8</maven.compiler.source>
-                <maven.compiler.target>1.8</maven.compiler.target>
-                <org>aosoriosaul-eval</org>
-                <apigee.profile>test</apigee.profile>
-                <apigee.env>test</apigee.env>
-                <apigee.hosturl>https://apigee.com</apigee.hosturl>
-                <apigee.apiversion>v1</apigee.apiversion>
-                <apigee.org>${org}</apigee.org>
-                <apigee.username>${username}</apigee.username>
-                <apigee.password>${password}</apigee.password>
-                <apigee.options>${options}</apigee.options>
-                <apigee.revision>${revision}</apigee.revision>
-                <apigee.host>https://apigee.com</apigee.host>
-            </properties>         
-        </profile> 
-        <!-- optional tests       
+            <build>
+              <plugins>
+                <plugin>
+                    <groupId>com.lazerycode.jmeter</groupId>
+                    <artifactId>jmeter-maven-plugin</artifactId>
+                    <version>1.8.1</version>
+                    <executions>
+                        <execution>
+                            <id>jmeter-tests</id>
+                            <phase>install</phase>
+                            <goals>
+                                <goal>jmeter</goal>
+                            </goals>
+                            <configuration>
+                                <skipTests>${skipTests}</skipTests> 
+                                <ignoreResultFailures>true</ignoreResultFailures>
+                                <suppressJMeterOutput>false</suppressJMeterOutput>
+                                    <propertiesUser> 
+                                        <testData>weather_test.csv</testData>
+                                        <threadNum>5</threadNum>
+                                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
+                                        <loopCount>2</loopCount>
+                                    </propertiesUser> 
+                            </configuration>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <testFilesDirectory>tests</testFilesDirectory>
+                        <testResultsTimestamp>false</testResultsTimestamp>
+                    </configuration>                    
+                    </plugin>
+                </plugins>
+            </build>            
+        </profile>        
         <profile>
             <id>prod</id>
             <build>
@@ -131,8 +103,8 @@
                     </plugin>
                 </plugins>
             </build>            
+
         </profile>
---> 
     </profiles>
-   
+-->    
 </project>
