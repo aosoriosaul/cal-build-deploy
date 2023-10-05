@@ -30,81 +30,26 @@
     <version>1.0</version>
     <name>calculator</name>
     <packaging>pom</packaging>
-<!-- optional tests
     <profiles>
-        <profile>
-            <id>test</id>
-            <build>
-              <plugins>
-                <plugin>
-                    <groupId>com.lazerycode.jmeter</groupId>
-                    <artifactId>jmeter-maven-plugin</artifactId>
-                    <version>1.8.1</version>
-                    <executions>
-                        <execution>
-                            <id>jmeter-tests</id>
-                            <phase>install</phase>
-                            <goals>
-                                <goal>jmeter</goal>
-                            </goals>
-                            <configuration>
-                                <skipTests>${skipTests}</skipTests> 
-                                <ignoreResultFailures>true</ignoreResultFailures>
-                                <suppressJMeterOutput>false</suppressJMeterOutput>
-                                    <propertiesUser> 
-                                        <testData>weather_test.csv</testData>
-                                        <threadNum>5</threadNum>
-                                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
-                                        <loopCount>2</loopCount>
-                                    </propertiesUser> 
-                            </configuration>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <testFilesDirectory>tests</testFilesDirectory>
-                        <testResultsTimestamp>false</testResultsTimestamp>
-                    </configuration>                    
-                    </plugin>
-                </plugins>
-            </build>            
-        </profile>        
-        <profile>
-            <id>prod</id>
-            <build>
-              <plugins>
-                <plugin>
-                    <groupId>com.lazerycode.jmeter</groupId>
-                    <artifactId>jmeter-maven-plugin</artifactId>
-                    <version>1.8.1</version>
-                    <executions>
-                        <execution>
-                            <id>jmeter-tests</id>
-                            <phase>install</phase>
-                            <goals>
-                                <goal>jmeter</goal>
-                            </goals>
-                            <configuration>
-                                <skipTests>${skipTests}</skipTests>
-                                <ignoreResultFailures>true</ignoreResultFailures>
-                                <suppressJMeterOutput>false</suppressJMeterOutput>
-                                    <propertiesUser> 
-                                        <testData>weather_prod.csv</testData>
-                                        <threadNum>5</threadNum>
-                                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
-                                        <loopCount>2</loopCount>
-                                    </propertiesUser> 
-                            </configuration>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <testFilesDirectory>tests</testFilesDirectory>
-                        <testResultsTimestamp>false</testResultsTimestamp>
-                    </configuration>                    
-                    </plugin>
-                </plugins>
-            </build>            
-
-        </profile>
+                <profile>
+         <id>desarrollo</id>
+         <properties>
+            <org>baz-desarrollo</org>
+            <!-- default org, replace with default org to avoid passing parameter e.g. -Dorg testmyapi -->
+            <options>validate</options>
+            <!-- default org, replace with default org to avoid passing parameter e.g. -Dorg testmyapi -->
+            <apigee.env>test</apigee.env>
+            <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+            <apigee.apiversion>v1</apigee.apiversion>
+            <apigee.org>aosoriosaul-eval</apigee.org>
+            <apigee.username>aosoriosaul@hotmail.com</apigee.username>
+            <apigee.password>G@rf13ld1216</apigee.password>
+            <apigee.options>${options}</apigee.options>
+            <apigee.revision>${revision}</apigee.revision>
+            <!-- used while trying to update revision, use when option=update only -->
+            <!--apigee.override.delay>10</apigee.override.delay-->
+            <!--apigee.delay>1000</apigee.delay-->
+         </properties>
+      </profile>
     </profiles>
--->    
 </project>
