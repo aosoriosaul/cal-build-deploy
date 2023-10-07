@@ -36,19 +36,14 @@
             <properties>
                 <org>aosoriosaul-eval</org>
                 <options>validate</options>
-                <apigee.env>eval</apigee.env>
-                <!--<apigee.env>test</apigee.env>-->
-                <apigee.hosturl>https://apigee.googleapis.com</apigee.hosturl>
-                <!--<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>-->
+                <apigee.env>test</apigee.env>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>${org}</apigee.org>
-                <!--<apigee.username>${username}</apigee.username>
+                <apigee.username>${username}</apigee.username>
                 <apigee.password>${password}</apigee.password>
                 <apigee.options>${options}</apigee.options>
-                <apigee.revision>${revision}</apigee.revision>-->
-                <!--Se agrega bearer y Options-->
-                <apigee.options>override</apigee.options>
-                <apigee.bearer>${bearer}</apigee.bearer>
+                <apigee.revision>${revision}</apigee.revision>
             </properties>
         </profile>
     </profiles>
